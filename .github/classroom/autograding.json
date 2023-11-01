@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Test Exceptions",
+      "name": "test_file.py",
       "setup": "sudo -H pip3 install pytest",
       "run": "pytest",
       "input": "",
