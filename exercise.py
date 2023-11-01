@@ -1,18 +1,4 @@
 def add(num1, num2):
-    """
-    Add two numbers together.
-
-    Args:
-    - num1 (str): First number as a string.
-    - num2 (str): Second number as a string.
-
-    Returns:
-    - float: The result of the addition.
-
-    Raises:
-    - Value exception with the following message "Invalid input. Please provide valid numbers."
-    """
-    # TODO: Implement this function.
     try:
         result = float(num1) + float(num2)
         return result
@@ -20,33 +6,28 @@ def add(num1, num2):
         raise ValueError("Invalid input. Please provide valid numbers.")
 
 def subtract(num1, num2):
-    # Similar to the add function.
-    # TODO: Implement this function.
-    pass
+    try:
+        result = float(num1) - float(num2)
+        return result
+    except ValueError:
+        raise ValueError("Invalid input. Please provide valid numbers.")
 
 def multiply(num1, num2):
-    # Similar to the add function.
-    # TODO: Implement this function.
-    pass
+    try:
+        result = float(num1) * float(num2)
+        return result
+    except ValueError:
+        raise ValueError("Invalid input. Please provide valid numbers.")
 
 def divide(num1, num2):
-    """
-    Divide the first number by the second number.
+    try:
+        result = float(num1) / float(num2)
+        return result
+    except ValueError:
+        raise ValueError("Invalid input. Please provide valid numbers.")
+    except ZeroDivisionError:
+        raise ZeroDivisionError("Cannot divide by zero.")
 
-    Args:
-    - num1 (str): First number as a string.
-    - num2 (str): Second number as a string.
-
-    Returns:
-    - float: The result of the division.
-
-    Raises:
-    - Value exception with the following message "Invalid input. Please provide valid numbers."
-    - If divided by zero, ZeroDivisionError with the following message: "Cannot divide by zero."
-
-    """
-    # TODO: Implement this function.
-    pass
 
 def driver():
     while True:
